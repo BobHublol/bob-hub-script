@@ -1,0 +1,29 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("Bob Hub", "Default")
+
+local Maintab = DrRayLibrary.newTab("Main", "ImageIdHere")
+
+Maintab.newToggle("Auto spam", "clik to work cant turn off not mine", true, function(toggleState)
+    if toggleState then
+        loadstring(game:HttpGet("https://pastebin.com/raw/t2391h1A"))()
+    else
+        print(off)
+    end
+end)
+
+Maintab.newToggle("Auto Parry", "clik to work cant turn off", true, function(toggleState)
+    if toggleState then
+        getgenv().config = getgenv().config or {
+    hit_time = 0.5, -- // recommended 0.25 to 0.75 \ --
+ 
+    mode = 'Always', -- // Hold , Toggle , Always \ --
+    deflect_type = 'Remote', -- // Key Press , Remote \ --
+    notifications = true,
+    keybind = Enum.KeyCode.V
+}
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+    else
+        print(off)
+    end
+end)
